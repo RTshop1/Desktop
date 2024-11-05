@@ -1,5 +1,6 @@
 lista_de_compras = []
 
+# Opção 1
 def adicionar_item (lista_de_compras: list) -> list:
     novo_item = input('Digite o novo item a ser adicionado:')
     lista_de_compras = lista_de_compras + [novo_item]
@@ -7,7 +8,25 @@ def adicionar_item (lista_de_compras: list) -> list:
     return lista_de_compras
 
 
+# Opção 2
+def deletar_item(lista_de_compras:list) -> list:
+
+    item_remover = int(input('Digite o código do item:')) - 1[]
+    del lista_de_compras[item_remover]
+
+    return lista_de_compras
+
+
+
+# Opção 3
+def exibir_lista(lista_de_compras:list):
+
+    for i in range(len(lista_de_compras))
+        print(f'{i+1} - {lista_de_compras[i]}')
+
+
 opcao = 1000
+
 
 while opcao != 0:
     print('\n =============================')
@@ -30,21 +49,21 @@ while opcao != 0:
     elif opcao == 2:
         print('\n =====> REMOVER ITEM DA LISTA <=====\n')
 
-
-        for i in range(len(lita_de_compras)):
-            print(f'{i+1} - {lita_de_compras[i]}')
+        exibir_lista(lista_de_compras)
+        
 
     
         print('\n===')
 
-        item_remover = int(input('Digite o código do item:')) - 1
+        item_remover = int(input('Digite o código do item:')) - 1[]
 
         del lista_de_compras [item_remover]
 
 
     # Exibir a lista completa
     elif opcao == 3:
-        print('\n======> ADICIONAR ITEM <=======\n')
+        print('\n======> LISTA COMPLETA <=======\n')
 
         for i in range(len(lita_de_compras)):
             print(f'{i+1} - {lita_de_compras[i]}')
+            exibir_lista(lista_de_compras=lista_de_compras)
