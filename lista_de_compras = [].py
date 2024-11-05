@@ -11,7 +11,7 @@ def adicionar_item (lista_de_compras: list) -> list:
 # Opção 2
 def deletar_item(lista_de_compras:list) -> list:
 
-    item_remover = int(input('Digite o código do item:')) - 1[]
+    item_remover = int(input('Digite o código do item:')) - 1
     del lista_de_compras[item_remover]
 
     return lista_de_compras
@@ -55,7 +55,7 @@ while opcao != 0:
     
         print('\n===')
 
-        item_remover = int(input('Digite o código do item:')) - 1[]
+        item_remover = int(input('Digite o código do item:')) - 1
 
         del lista_de_compras [item_remover]
 
